@@ -201,7 +201,7 @@ main {
 }
 
 .qr-figure {
-  width: 116px;
+  width: min(220px, 55vw);
   margin: 0;
 }
 
@@ -304,6 +304,14 @@ h2 {
 .topic-heading h2 {
   max-width: 940px;
   margin: 13px 0 0;
+}
+
+.topic-heading.exact-heading {
+  display: block;
+}
+
+.topic-heading.exact-heading h2 {
+  margin-top: 0;
 }
 
 .standfirst {

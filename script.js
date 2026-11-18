@@ -55,6 +55,14 @@ const imagesThatCanZoom = document.querySelectorAll(
 );
 
 imagesThatCanZoom.forEach((image) => {
+  const figure = image.closest("figure");
+
+  if (figure && !figure.querySelector("figcaption")) {
+    const caption = document.createElement("figcaption");
+    caption.textContent = image.alt;
+    image.after(caption);
+  }
+
   const zoomButton = document.createElement("button");
 
   zoomButton.type = "button";
