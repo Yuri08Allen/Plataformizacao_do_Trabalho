@@ -291,7 +291,7 @@ h2 {
 }
 
 .topic-muted {
-  background: linear-gradient(90deg, rgba(238, 233, 220, 0.58), transparent);
+  background: transparent;
 }
 
 .topic-heading {
@@ -1192,9 +1192,6 @@ th {
     text-align: left;
   }
 
-  .topic-muted {
-    background: linear-gradient(90deg, rgba(238, 233, 220, 0.48), transparent);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
