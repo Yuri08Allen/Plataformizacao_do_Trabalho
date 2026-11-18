@@ -196,7 +196,10 @@ main {
 
 .qr-below {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
   margin-top: 30px;
 }
 
@@ -217,6 +220,13 @@ main {
   font-size: 8px;
   letter-spacing: 0.08em;
   text-align: center;
+}
+
+.qr-link {
+  color: var(--color-olive);
+  font-size: 12px;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 /* Table of contents */
