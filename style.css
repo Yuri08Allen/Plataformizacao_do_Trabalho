@@ -709,6 +709,11 @@ th {
   margin: 28px 0 42px;
 }
 
+.topic-video-centered {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
 .video-card {
   padding: 12px;
   border: 1px solid var(--color-line);
