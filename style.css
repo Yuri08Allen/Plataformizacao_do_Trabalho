@@ -307,7 +307,8 @@ h2 {
   background: transparent;
 }
 
-.conclusion {
+.conclusion,
+.celebration {
   position: relative;
   display: grid;
   min-height: 520px;
@@ -329,13 +330,15 @@ h2 {
   pointer-events: none;
 }
 
-.conclusion-content {
+.conclusion-content,
+.celebration-content {
   position: relative;
   z-index: 1;
   text-align: center;
 }
 
-.conclusion-content .small-cap {
+.conclusion-content .small-cap,
+.celebration-content .small-cap {
   color: var(--color-olive);
   letter-spacing: 0.16em;
 }
@@ -345,6 +348,15 @@ h2 {
   margin: 18px 0 0;
   font-size: clamp(42px, 8vw, 84px);
   line-height: 1.05;
+}
+
+.celebration-content h2 {
+  margin: 12px 0 0;
+  color: var(--color-brown);
+  font-size: clamp(76px, 18vw, 190px);
+  letter-spacing: -0.09em;
+  line-height: 0.95;
+  text-shadow: 0 4px 32px rgba(185, 152, 83, 0.22);
 }
 
 .topic-heading {
@@ -1245,7 +1257,8 @@ th {
     text-align: left;
   }
 
-  .conclusion {
+  .conclusion,
+  .celebration {
     min-height: 420px;
     margin-right: -21px;
     margin-left: -21px;
@@ -1259,7 +1272,8 @@ th {
     scroll-behavior: auto;
   }
 
-  .conclusion {
+  .conclusion,
+  .celebration {
     background-image:
       radial-gradient(circle at 18% 35%, rgba(141, 124, 88, 0.2), transparent 9%),
       radial-gradient(circle at 78% 28%, rgba(176, 107, 79, 0.15), transparent 11%),
